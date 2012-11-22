@@ -1,0 +1,17 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ruby-libappindicator
+Source: https://github.com/leander256/ruby-libappindicator
+
+Files: *
+Copyright: 2011 Thomas Kister <leander256@gmail.co>
+License: GPL-3 
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-3'.
+
+Files: debian/*
+Copyright: 2012 Sergio Rubio <rubiojr@frameos.org>
+License: GPL-3
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-3'.

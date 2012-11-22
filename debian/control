@@ -1,0 +1,20 @@
+Source: ruby-libappindicator
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Sergio Rubio <rubiojr@frameos.org>
+DM-Upload-Allowed: yes
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2), libappindicator-dev, ruby-pkg-config, ruby-gnome2-dev
+Standards-Version: 3.9.3
+#Vcs-Git: git://git.debian.org/pkg-ruby-extras/ruby-libappindicator.git
+#Vcs-Browser: http://git.debian.org/?p=pkg-ruby-extras/ruby-libappindicator.git;a=summary
+Homepage: http://github.com/leander256/ruby-libappindicator
+XS-Ruby-Versions: all
+
+Package: ruby-libappindicator
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, ruby-gtk2
+# gtk2 (>= 0), pkg-config (>= 0, development), gtk2 (>= 0, development)
+Description: Ruby bindings for libappindicator
+ Ruby bindings for libappindicator

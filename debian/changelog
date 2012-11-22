@@ -1,0 +1,5 @@
+ruby-libappindicator (0.1.5-1) precise; urgency=low
+
+  * Initial release 
+
+ -- Sergio Rubio <rubiojr@frameos.org>  Thu, 22 Nov 2012 20:14:31 +0100
