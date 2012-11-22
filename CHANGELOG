@@ -1,3 +1,5 @@
+v0.1.5. Use system gtk2, glib2 ruby libs if available
+
 v0.1.4. Use the correct rubygem's Gem methods depending on its version
 
 v0.1.3. Add romario333 (on github) in list of authors

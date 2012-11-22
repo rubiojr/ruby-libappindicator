@@ -20,9 +20,13 @@ proc_find_headers =
     }
   else
     Proc.new { |gem, header|
-      gem_spec = Gem::Specification.find_by_name(gem)
-      dirs = Dir.glob(gem_spec.lib_dirs_glob)
-      dirs.each {|dir| find_header(header, dir)}
+      begin
+        gem_spec = Gem::Specification.find_by_name(gem)
+        dirs = Dir.glob(gem_spec.lib_dirs_glob)
+        dirs.each {|dir| find_header(header, dir)}
+      rescue Gem::LoadError
+        find_header(header, RbConfig::CONFIG['vendorarchdir'])
+      end
     }
   end
 
